@@ -1,0 +1,29 @@
+{
+  "name": "pagina-feria-cultural",
+  "version": "1.0.0",
+  "description": "Una pagina de promocion del turismo de san pedro de macoris, un landing page y una pagina de reservas",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zanderaizer/Pagina-Feria-Cultural.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zanderaizer/Pagina-Feria-Cultural/issues"
+  },
+  "homepage": "https://github.com/Zanderaizer/Pagina-Feria-Cultural#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
