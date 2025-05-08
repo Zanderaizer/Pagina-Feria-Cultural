@@ -1,0 +1,125 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>San Pedro de Macorís - Tu Destino Caribeño</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header id="header">
+    <div class="logo">
+      <a href="#inicio">
+        <img src="c:\Users\USUARIO\Downloads\Black_White_Bold_Modern_Studio_Logo__1_-removebg-preview.png" alt="Logo San Pedro de Macorís">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#mision">Conócenos</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <div class="slider">
+      <div class="slide">
+        <img src="Sin-título--1.gif" alt="Slide 1">
+      </div>
+    </div>
+    <div class="overlay">
+      <h1>Bienvenidos a San Pedro de Macorís</h1>
+      <p>La Perla del Este, cuna de cultura, béisbol y mar</p>
+    </div>
+  </section>
+
+  <section id="mision" class="info-cards">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://tuguiadominicana.com/wp-content/uploads/2023/02/San-Pedro-de-Macoris-@sanpedrodemacoris023-edited.jpg" alt="Misión">
+      </div>
+      <h3>Misión</h3>
+      <p>Promover el turismo sostenible y cultural en San Pedro de Macorís.</p>
+      <button>Leer</button>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="https://i0.wp.com/viajeracebuana.com/wp-content/uploads/2024/01/San-Pedro-de-Macoris.jpg?resize=333%2C222&ssl=1" alt="Visión">
+      </div>
+      <h3>Visión</h3>
+      <p>Ser el destino turístico líder en el Este del país.</p>
+      <button>Leer</button>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Catedral_San_Pedro_de_Macoris_04_2019_4325.jpg/1200px-Catedral_San_Pedro_de_Macoris_04_2019_4325.jpg" alt="Valores">
+      </div>
+      <h3>Valores</h3>
+      <p>Compromiso, sostenibilidad y amor por nuestra tierra.</p>
+      <button>Leer</button>
+    </div>
+  </section>
+
+
+  <section id="seccion3" class="opciones">
+    <button class="btn-opcion" data-target="producto">Producto</button>
+    <button class="btn-opcion" data-target="servicio">Servicio</button>
+    <button class="btn-opcion" data-target="galeria">Galería</button>
+  </section>
+
+  <section id="producto" class="seccion-contenido" style="display:none;">
+    <h2>Producto</h2>
+    <p>Ofrecemos artesanías locales, recuerdos, guías turísticas y más.</p>
+  </section>
+
+  <section id="servicio" class="seccion-contenido" style="display:none;">
+    <h2>Servicio</h2>
+    <p>Guías bilingües, transporte, hospedaje ecológico, tours personalizados.</p>
+  </section>
+
+  <div class="gallery-slider-container">
+    <div class="gallery-slider">
+      <img class="gallery-slide" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/55/a0/4a/pool.jpg?w=1200&h=-1&s=1" alt="Imagen 1">
+      <img class="gallery-slide" src="https://www.kayak.com.do/rimg/himg/64/94/5b/ice-71445-72685432_3XL-402089.jpg?width=836&height=607&crop=true" alt="Imagen 2">
+      <img class="gallery-slide" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/0e/08/54/photo7jpg.jpg?w=900&h=500&s=1" alt="Imagen 3">
+      <img class="gallery-slide" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/412036295.jpg?k=a20313a336667f1549448f37ea5714307f75dccf73ac9c2d7b6612f9a4108fc8&o=&hp=1" alt="Imagen 4">
+      <img class="gallery-slide" src="https://tuguiadominicana.com/wp-content/uploads/2023/02/Catedral-de-San-Pedro-Apostol-@gorepublicadominicana-edited.jpg" alt="Imagen 5">
+      <img class="gallery-slide" src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/50000/50170-Juan-Dolio.jpg" alt="Imagen 6">
+      <img class="gallery-slide" src="https://images.prismic.io/prismic-rd-2/Z46aDJbqstJ99ptF_juan_dolio_2_9057d982-7dc3-4cf0-9db0-b3a0278a272a.jpg?auto=format,compress1" alt="Imagen 7">
+    </div>
+  </div>
+  
+  <section id="producto" class="seccion-contenido hidden">
+    <h2>Producto</h2>
+    <p>Ofrecemos artesanías locales, recuerdos, guías turísticas y más.</p>
+  </section>
+  
+
+  <label for="nombre">Tu nombre</label>
+  <input id="nombre" type="text" placeholder="Tu nombre" required>
+  
+  <label for="email">Tu email</label>
+  <input id="email" type="email" placeholder="Tu email" required>
+  
+  <label for="mensaje">Escribe tu mensaje</label>
+  <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+  
+
+  <footer>
+    <p>&copy; 2025 Turismo San Pedro de Macorís</p>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Twitter</a></li>
+    </ul>
+  </footer>
+  
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
