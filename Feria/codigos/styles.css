@@ -1,0 +1,460 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+    color: #4b3e2d; 
+  }
+  
+  #portada {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contenido-portada {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  .contenido-portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(48, 34, 20, 0.3);
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    pointer-events: none; /* solo si es necesario */
+  }
+  
+  
+  .boton-portada {
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    background-color: #9ac1e0;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-portada:hover {
+    background-color: #66bcc2;
+  }
+  
+  
+  html {
+    scroll-behavior: smooth;
+  }
+ 
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 30;
+    background-color: #8ea8a4;
+  }
+  
+/* Estilo para el logo */
+header .logo img {
+    height: 200px; /* Ajusta este valor según el tamaño de los botones */
+    width: auto; /* Mantiene la proporción original de la imagen */
+  }
+  
+  /* Estilo para los botones del menú */
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+  header nav ul li a {
+    font-size: 16px; /* Ajusta el tamaño de los botones */
+    color: #070706;
+    font-weight: 600;
+    padding: 10px 15px; /* Ajusta el tamaño del área clickeable */
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #74c7b2;
+  }
+  
+ /* Contenedor del GIF */
+.slider-gif {
+    width: 100%;
+    height: 150vh; /* Hace que el contenedor cubra toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra la imagen en el contenedor */
+    overflow: hidden; /* Asegura que la imagen no se desborde */
+    position: relative;
+  }
+  
+  /* Estilos de la imagen GIF */
+  .slider-gif img {
+    width: 100%; /* La imagen ocupa todo el ancho */
+    height: 88%; /* La imagen ocupa toda la altura */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el área sin distorsionarse */
+    border-radius: 0; /* Quita el borde redondeado, a menos que lo quieras */
+    box-shadow: none; /* Puedes mantener la sombra si la deseas */
+  }
+  
+  
+  
+  @keyframes slide {
+    0%   { transform: translateX(0%); }
+    16%  { transform: translateX(-100%); }
+    32%  { transform: translateX(-200%); }
+    48%  { transform: translateX(-300%); }
+    64%  { transform: translateX(-400%); }
+    80%  { transform: translateX(-500%); }
+    100% { transform: translateX(0%); }
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(48, 34, 20, 0.3);
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    pointer-events: none;
+  }
+  
+  .overlay h1 {
+    font-size: 3rem;
+  }
+  
+  .overlay p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('imagenes/slider1.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero-content {
+    z-index: 2;
+  }
+  
+  .hero .cta-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #d4a373;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .hero .cta-button:hover {
+    background: #c19a6b;
+  }
+  
+ 
+  .info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px 30px;
+    background-color: #f7f1ea;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #dfdfdf;
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #000000;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #4b3e2d;
+  }
+  
+  .card p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #5a4a3c;
+  }
+  
+  .card button {
+    background-color: #d4a373;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #b88e60;
+  }
+  
+ 
+  .contenido-blanco {
+    background-color: #fff;
+    color: #3d3d3d;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 15px;
+    max-width: 1000px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+/* Estilos para la sección de galería */
+/* Contenedor principal de la galería */
+#galeria {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    overflow: hidden; /* Ocultar imágenes fuera del contenedor */
+}
+
+.titulo-galeria {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Contenedor de la galería */
+.galeria {
+    width: 100%;
+    overflow: hidden; /* Ocultar contenido extra */
+    position: relative;
+}
+
+/* Carrusel de imágenes */
+.carrusel {
+    display: flex; /* Coloca las imágenes en una fila horizontal */
+    animation: scroll 20s linear infinite; /* Animación continua */
+}
+
+.carrusel img {
+    flex: 0 0 auto; /* Mantener tamaño de las imágenes */
+    width: 200px; /* Ancho fijo */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 16px; /* Espacio entre imágenes */
+}
+
+/* Animación de desplazamiento continuo */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Empieza en la posición inicial */
+    }
+    100% {
+        transform: translateX(-100%); /* Mueve todo el contenedor hacia la izquierda */
+    }
+}
+
+/* Estilos para el botón */
+.btn-reservas {
+    background-color: #1ab46c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+  .btn-reservas:hover {
+    background-color: #0f0f0f;
+  }
+ 
+.seccion-contenido {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+ 
+
+  .seccion-contenido.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+/* Contacto */
+#contacto {
+    background-color: #fefaf4;
+    padding: 30px 15px;
+    text-align: center;
+    border-top: 4px solid #d4a373;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 60px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  #contacto h2 {
+    font-size: 1.8rem;
+    color: #4b3e2d;
+    margin-bottom: 8px;
+  }
+  
+  #contacto p {
+    font-size: 0.95rem;
+    color: #6b5844;
+    margin-bottom: 15px;
+  }
+  
+  #contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  #contacto input,
+  #contacto textarea {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+  }
+  
+  #reservas {
+    background-color: #f5eee6;
+    padding: 30px;
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  #reservas h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #5a4a3c;
+  }
+  
+  #reservas button {
+    background-color: #d4a373;
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #reservas button:hover {
+    background-color: #b88e60;
+  }
+  
+  footer {
+    background-color: #e5d2bd;
+    color: #4b3e2d;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .seccion-contenido {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  .seccion-contenido.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
